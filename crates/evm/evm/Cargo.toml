@@ -21,6 +21,7 @@ foundry-config.workspace = true
 foundry-evm-core.workspace = true
 foundry-evm-coverage.workspace = true
 foundry-evm-fuzz.workspace = true
+foundry-evm-hardforks.workspace = true
 foundry-evm-networks.workspace = true
 foundry-evm-traces.workspace = true
 
@@ -48,7 +49,6 @@ revm = { workspace = true, default-features = false, features = [
 ] }
 revm-inspectors.workspace = true
 
-tempo-chainspec.workspace = true
 tempo-contracts.workspace = true
 tempo-precompiles.workspace = true
 tempo-revm.workspace = true

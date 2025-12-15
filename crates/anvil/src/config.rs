@@ -689,6 +689,13 @@ impl NodeConfig {
         self
     }
 
+    /// Sets the hardfork
+    #[must_use]
+    pub fn with_hardfork(mut self, hardfork: Option<FoundryHardfork>) -> Self {
+        self.hardfork = hardfork;
+        self
+    }
+
     /// Sets the init genesis (genesis.json)
     #[must_use]
     pub fn with_genesis(mut self, genesis: Option<Genesis>) -> Self {
@@ -726,13 +733,6 @@ impl NodeConfig {
         self.genesis_block_number
             .or_else(|| self.genesis.as_ref().and_then(|g| g.number))
             .unwrap_or(0)
-    }
-
-    /// Sets the hardfork
-    #[must_use]
-    pub fn with_hardfork(mut self, hardfork: Option<FoundryHardfork>) -> Self {
-        self.hardfork = hardfork;
-        self
     }
 
     /// Sets the genesis accounts
