@@ -156,5 +156,8 @@ forge create src/MyToken.sol:MyToken \
   --force
 ```
 
+## Explorer
+
+Check your tx on block explorer : https://explorer.tempo.xyz/
 
 
